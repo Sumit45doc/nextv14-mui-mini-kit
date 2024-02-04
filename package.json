@@ -9,8 +9,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sumit45doc/nextv14-mui-mini-kit"
+  },
+  "keywords": [
+    "Nextjs",
+    "mui",
+    "reduxtoolkit",
+    "nextjs-template",
+    "nextjs app router with mui",
+    "nextv14-mui-mini-kit"
+  ],
+  "author": "Sumit Kumar Sharma",
   "license": "ISC",
   "dependencies": {
     "fs-extra": "^11.2.0",
