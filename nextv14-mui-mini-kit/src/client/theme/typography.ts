@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 
-
 export function remToPx(value: string) {
     return Math.round(parseFloat(value) * 16);
 }
@@ -40,32 +39,32 @@ const typography = {
     h1: {
         fontWeight: 800,
         lineHeight: 80 / 64,
-        fontSize: pxToRem(40),
-        ...responsiveFontSizes({ sm: 52, md: 58, lg: 64 }),
+        fontSize: pxToRem(38),
+        ...responsiveFontSizes({ sm: 50, md: 60, lg: 64 }),
     },
     h2: {
         fontWeight: 800,
         lineHeight: 64 / 48,
-        fontSize: pxToRem(32),
+        fontSize: pxToRem(30),
         ...responsiveFontSizes({ sm: 40, md: 44, lg: 48 }),
     },
     h3: {
         fontWeight: 700,
         lineHeight: 1.5,
         fontSize: pxToRem(24),
-        ...responsiveFontSizes({ sm: 26, md: 30, lg: 32 }),
+        ...responsiveFontSizes({ sm: 26, md: 30, lg: 33 }),
     },
     h4: {
         fontWeight: 700,
         lineHeight: 1.5,
         fontSize: pxToRem(20),
-        ...responsiveFontSizes({ sm: 20, md: 24, lg: 24 }),
+        ...responsiveFontSizes({ sm: 22, md: 24, lg: 26 }),
     },
     h5: {
         fontWeight: 700,
         lineHeight: 1.5,
         fontSize: pxToRem(18),
-        ...responsiveFontSizes({ sm: 19, md: 20, lg: 20 }),
+        ...responsiveFontSizes({ sm: 19, md: 20, lg: 22 }),
     },
     h6: {
         fontWeight: 700,
@@ -85,11 +84,11 @@ const typography = {
     },
     body1: {
         lineHeight: 1.5,
-        fontSize: pxToRem(16),
+        fontSize: pxToRem(18),
     },
     body2: {
         lineHeight: 22 / 14,
-        fontSize: pxToRem(14),
+        fontSize: pxToRem(16),
     },
     caption: {
         lineHeight: 1.5,

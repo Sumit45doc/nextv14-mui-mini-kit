@@ -10,7 +10,7 @@ type Props = {
 
 function AppProviders({ children }: Props) {
   return (
-    <AppRouterCacheProvider>
+    <AppRouterCacheProvider options={{ enableCssLayer: true }}>
       <ReduxProvider>
         <ThemeProvider>
           <NotistackProvider>{children}</NotistackProvider>

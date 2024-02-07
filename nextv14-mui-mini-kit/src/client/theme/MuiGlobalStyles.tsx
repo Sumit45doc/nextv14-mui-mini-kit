@@ -4,11 +4,17 @@ import { GlobalStyles as MUIGlobalStyles } from "@mui/material";
 // ----------------------------------------------------------------------
 
 export default function MuiGlobalStyles() {
-  const inputGlobalStyles = (
+  return (
     <MUIGlobalStyles
       styles={{
         "*": {
           boxSizing: "border-box",
+          ":after": {
+            boxSizing: "border-box",
+          },
+          ":before": {
+            boxSizing: "border-box",
+          },
         },
         html: {
           margin: 0,
@@ -52,6 +58,4 @@ export default function MuiGlobalStyles() {
       }}
     />
   );
-
-  return inputGlobalStyles;
 }

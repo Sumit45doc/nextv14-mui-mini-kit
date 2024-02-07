@@ -2,6 +2,8 @@
 import { useRef } from "react";
 import { Provider } from "react-redux";
 import { makeStore, AppStore } from "./store";
+import { PersistGate } from "redux-persist/integration/react";
+import { Persistor, persistStore } from "redux-persist";
 
 export default function ReduxProvider({
   children,
@@ -9,9 +11,22 @@ export default function ReduxProvider({
   children: React.ReactNode;
 }) {
   const storeRef = useRef<AppStore>();
+  const persist = useRef<Persistor>();
   if (!storeRef.current) {
     // *Create the store instance the first time this renders
-    storeRef.current = makeStore();
+    const store = makeStore();
+    storeRef.current = store;
+    persist.current = persistStore(store);
+  }
+
+  if (persist.current) {
+    return (
+      <Provider store={storeRef.current}>
+        <PersistGate loading={null} persistor={persist.current}>
+          {children}
+        </PersistGate>
+      </Provider>
+    );
   }
 
   return <Provider store={storeRef.current}>{children}</Provider>;

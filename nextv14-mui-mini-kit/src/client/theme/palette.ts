@@ -22,15 +22,15 @@ declare module '@mui/material/styles/createPalette' {
 
 const GREY = {
     0: '#FFFFFF',
-    100: '#F9FAFB',
-    200: '#F4F6F8',
+    100: '#F9FAFA',
+    200: '#F4F6F7',
     300: '#DFE3E8',
-    400: '#C4CDD5',
-    500: '#919EAB',
-    600: '#637381',
-    700: '#454F5B',
-    800: '#212B36',
-    900: '#161C24',
+    400: '#c3cbd2',
+    500: '#919EAA',
+    600: '#637382',
+    700: '#454F5A',
+    800: '#212B37',
+    900: '#161C21',
 };
 
 const PRIMARY = {
@@ -43,47 +43,47 @@ const PRIMARY = {
 };
 
 const SECONDARY = {
-    lighter: '#D6E4FF',
-    light: '#84A9FF',
-    main: '#3366FF',
-    dark: '#1939B7',
-    darker: '#091A7A',
+    lighter: '#d1dffc',
+    light: '#82a7fe',
+    main: '#2e61fb',
+    dark: '#1637b9',
+    darker: '#06177a',
     contrastText: '#FFFFFF',
 };
 
 const INFO = {
-    lighter: '#CAFDF5',
-    light: '#61F3F3',
-    main: '#00B8D9',
-    dark: '#006C9C',
-    darker: '#003768',
+    lighter: '#c2fbf2',
+    light: '#60f7f7',
+    main: '#00b4d4',
+    dark: '#056d9a',
+    darker: '#023663',
     contrastText: '#FFFFFF',
 };
 
 const SUCCESS = {
-    lighter: '#D8FBDE',
-    light: '#86E8AB',
-    main: '#36B37E',
-    dark: '#1B806A',
-    darker: '#0A5554',
+    lighter: '#d6ffdd',
+    light: '#84ebac',
+    main: '#33b57f',
+    dark: '#198069',
+    darker: '#095756',
     contrastText: '#FFFFFF',
 };
 
 const WARNING = {
-    lighter: '#FFF5CC',
-    light: '#FFD666',
-    main: '#FFAB00',
-    dark: '#B76E00',
-    darker: '#7A4100',
+    lighter: '#fef3c6',
+    light: '#fcd465',
+    main: '#faa803',
+    dark: '#bd7200',
+    darker: '#764001',
     contrastText: GREY[800],
 };
 
 const ERROR = {
-    lighter: '#FFE9D5',
-    light: '#FFAC82',
-    main: '#FF5630',
-    dark: '#B71D18',
-    darker: '#7A0916',
+    lighter: '#f5a67f',
+    light: '#fb9b6b',
+    main: '#fc5f3c',
+    dark: '#d64642',
+    darker: '#a63743',
     contrastText: '#FFFFFF',
 };
 

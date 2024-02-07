@@ -5,6 +5,7 @@ import {
   CssBaseline,
   ThemeProvider as MuiThemeProvider,
   ThemeOptions,
+  useTheme,
 } from "@mui/material";
 import React, { ReactNode, useMemo } from "react";
 import MuiGlobalStyles from "./MuiGlobalStyles";
@@ -18,11 +19,12 @@ type Props = {
 
 function ThemeProvider({ children }: Props) {
   const { themeMode } = useAppSelector((state) => state.appSetting);
+  const prevTheme = useTheme()
   const themeOptions: ThemeOptions = useMemo(
     () => ({
       palette: palette(themeMode),
       typography,
-      shadows: shadows(themeMode),
+      shadows: shadows(themeMode, prevTheme),
     }),
     [themeMode]
   );
