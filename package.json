@@ -14,12 +14,11 @@
     "url": "https://github.com/Sumit45doc/nextv14-mui-mini-kit"
   },
   "keywords": [
-    "Nextjs",
-    "mui",
-    "reduxtoolkit",
+    "Nextjs-mui-reduxtoolkit",
     "nextjs-template",
-    "nextjs app router with mui",
-    "nextv14-mui-mini-kit"
+    "nextjs-app-router-with-mui",
+    "nextv14-mui-mini-kit",
+    "nextjs-mui-redux-kit"
   ],
   "author": "Sumit Kumar Sharma",
   "license": "ISC",
